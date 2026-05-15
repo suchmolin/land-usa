@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.65 59.31">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 22.7px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #dc3545;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="0" y="0" width="279.65" height="59.31" rx="15" ry="15"/>
+  <text class="cls-1" transform="translate(46.33 37.7)"><tspan x="0" y="0">EN </tspan><tspan class="cls-5" x="40" y="0">VI</tspan><tspan class="cls-4" x="63.7" y="0">V</tspan><tspan x="80.11" y="0">O · ONLINE</tspan></text>
+  <circle class="cls-2" cx="24.23" cy="29.65" r="9.32"/>
+</svg>

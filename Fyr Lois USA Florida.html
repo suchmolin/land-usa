@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fyr Lois USA — Inglés para hispanos en Florida · Online y presencial en Kissimmee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap">
+<style>
+  :root{
+    --navy:#1a237e;
+    --navy-deep:#0f1761;
+    --green:#7ac142;
+    --green-2:#5fa733;
+    --orange:#f5a623;
+    --pink:#e6347e;
+    --yellow:#ffd400;
+    --red:#dc3545;
+    --bg:#fff;
+    --soft:#f4f5f8;
+    --ink:#0e1340;
+    --muted:#6b7196;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+  /* nav */
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:1200px;margin:0 auto;gap:18px}
+  .logo{display:inline-flex;align-items:center;line-height:0}
+  .logo img{height:38px;width:auto}
+  .usa-tag{display:inline-flex;align-items:center;gap:6px;font-weight:900;font-size:11px;letter-spacing:1.5px;margin-left:14px;color:#fff;vertical-align:middle;background:linear-gradient(90deg,#1a237e 0%,#1a237e 35%,#dc3545 35%,#dc3545 100%);padding:5px 12px 5px 8px;border-radius:6px}
+  .usa-tag img{width:22px;height:auto;flex-shrink:0}
+  .nav-meta{display:flex;align-items:center;gap:16px;font-weight:800;font-size:12px;color:var(--navy)}
+  .nav-meta .phone{display:inline-flex;align-items:center;gap:6px;color:var(--green-2)}
+  .nav-meta .phone img{width:14px;height:14px;opacity:.85}
+  .icon-img{display:block;object-fit:contain}
+  .pain .ic img{width:32px;height:32px}
+  .why-card .ic img{width:26px;height:26px}
+  .hq-card .info .row .ic img{width:20px;height:20px}
+  .mode-toggle button .ic img{width:16px;height:16px}
+  .audience-tabs button .ic img{width:20px;height:20px}
+
+  .cta-pill{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#9ad96a,#5fa733);color:#fff;font-weight:800;font-style:italic;padding:14px 26px;border-radius:999px;box-shadow:0 6px 14px rgba(95,167,51,.35);border:none;cursor:pointer;font-size:15px;transition:transform .15s ease, box-shadow .15s ease}
+  .cta-pill:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(95,167,51,.45)}
+  .cta-pill .wa{width:24px;height:24px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+  .cta-pill .wa img{width:16px;height:16px;display:block}
+  .wa-fab img{width:30px;height:30px;display:block}
+  .cta-pill.orange{background:linear-gradient(180deg,#ffb544,#e08f10);box-shadow:0 6px 14px rgba(245,166,35,.4)}
+  .cta-pill.navy{background:linear-gradient(180deg,#1f6dd6,#0a3d92);box-shadow:0 6px 14px rgba(10,61,146,.35)}
+  .cta-pill.outline{background:transparent;border:2px solid rgba(255,255,255,.4);color:#fff;box-shadow:none;padding:12px 24px}
+  .cta-pill.outline:hover{background:rgba(255,255,255,.08);border-color:#fff}
+
+  /* HERO */
+  .hero{position:relative;background:linear-gradient(135deg,#1a237e 0%,#0f1761 100%);color:#fff;overflow:hidden;padding:36px 0 80px}
+  .hero::before{content:"";position:absolute;top:-100px;right:-100px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(122,193,66,.18) 0%,transparent 70%)}
+  .hero::after{content:"";position:absolute;bottom:-150px;left:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(220,53,69,.13) 0%,transparent 70%)}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;z-index:1}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.5);color:var(--yellow);font-weight:900;font-size:11px;letter-spacing:2px;padding:7px 14px;border-radius:999px;margin-bottom:20px}
+  .hero-eyebrow::before{content:"⭐";font-size:13px}
+
+  h1.hero-h{font-size:60px;line-height:.98;letter-spacing:-2px;margin:0 0 18px;color:#fff;font-weight:900}
+  h1.hero-h .or{color:var(--orange)}
+  h1.hero-h .green{color:var(--green);position:relative;display:inline-block}
+  h1.hero-h .green::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:10px;background:rgba(122,193,66,.25);border-radius:4px;z-index:-1}
+  h1.hero-h .underline{position:relative;display:inline-block}
+  h1.hero-h .underline::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:var(--orange);border-radius:2px}
+
+  .hero-sub{font-size:18px;line-height:1.55;color:#dfe4ff;font-weight:500;margin:0 0 18px;max-width:560px}
+  .hero-sub b{color:#fff;font-weight:800}
+  .hero-promise{display:inline-block;font-size:13.5px;color:var(--yellow);font-weight:900;font-style:italic;letter-spacing:.4px;margin:0 0 24px;padding:10px 16px;background:rgba(255,212,0,.1);border-left:3px solid var(--yellow);border-radius:0 8px 8px 0}
+
+  .hero-ctas{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:28px}
+  .hero-ctas .ghost{font-weight:800;color:#bcc3e8;font-size:12px;letter-spacing:.3px}
+
+  .hero-stats{display:flex;gap:24px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);max-width:580px}
+  .hero-stats .s{flex:1}
+  .hero-stats .n{font-weight:900;color:var(--green);font-size:26px;letter-spacing:-.5px;line-height:1}
+  .hero-stats .n.or{color:var(--orange)}
+  .hero-stats .n.r{color:#ff8a8a}
+  .hero-stats .l{font-size:11px;font-weight:700;color:#bcc3e8;letter-spacing:.7px;text-transform:uppercase;margin-top:6px;line-height:1.3}
+
+  /* MODE TOGGLE */
+  .mode-toggle{display:inline-flex;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:5px;margin-bottom:22px;gap:4px}
+  .mode-toggle button{appearance:none;border:0;background:transparent;color:#bcc3e8;font:800 12px/1 'Montserrat',sans-serif;letter-spacing:.6px;padding:10px 18px;border-radius:10px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s ease}
+  .mode-toggle button.active{background:linear-gradient(180deg,#9ad96a,#5fa733);color:#fff;box-shadow:0 4px 10px rgba(95,167,51,.4)}
+  .mode-toggle button .ic{font-size:14px}
+
+  /* hero visual: a stylized scene — adult on laptop + family in classroom */
+  .hero-visual{position:relative;aspect-ratio:1/1;border-radius:24px;background:linear-gradient(135deg,#7ac142 0%,#5fa733 100%);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4), inset 0 0 0 8px rgba(255,255,255,.08);padding:24px}
+  .hv-card{position:absolute;background:#fff;color:var(--navy);border-radius:18px;box-shadow:0 14px 30px rgba(0,0,0,.3);overflow:hidden}
+  .hv-screen{left:8%;top:10%;width:62%;aspect-ratio:16/10;display:flex;flex-direction:column}
+  .hv-screen .bar{display:flex;align-items:center;gap:5px;padding:8px 10px;background:#f4f5f8;border-bottom:1px solid #e3e7ef}
+  .hv-screen .bar i{width:8px;height:8px;border-radius:50%;background:#dc3545}
+  .hv-screen .bar i:nth-child(2){background:#f5a623}
+  .hv-screen .bar i:nth-child(3){background:#7ac142}
+  .hv-screen .bar .url{flex:1;height:14px;background:#fff;border-radius:4px;margin-left:8px}
+  .hv-screen .grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:8px;background:#0e1340}
+  .hv-screen .grid .tile{background:linear-gradient(135deg,#3949ab,#5c6bc0);border-radius:6px;position:relative;overflow:hidden}
+  .hv-screen .grid .tile::after{content:"";position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);width:22px;height:22px;border-radius:50%;background:linear-gradient(180deg,#f5d2b3,#e3b48d)}
+  .hv-screen .grid .tile::before{content:"";position:absolute;left:50%;bottom:8%;transform:translateX(-50%);width:50%;height:30%;background:rgba(255,255,255,.2);border-radius:30px 30px 0 0}
+  .hv-screen .grid .tile.teach{background:linear-gradient(135deg,#7ac142,#5fa733)}
+  .hv-screen .grid .tile.teach::after{background:linear-gradient(180deg,#f5d2b3,#e3b48d)}
+  .hv-screen .label{position:absolute;left:14px;top:46px;background:#0e1340;color:#fff;font-size:9px;font-weight:900;padding:3px 7px;border-radius:4px;letter-spacing:.8px;z-index:2}
+
+  .hv-classroom{right:6%;bottom:8%;width:58%;aspect-ratio:1.3/1;background:#fff;padding:14px;display:flex;flex-direction:column;gap:8px}
+  .hv-classroom .board{flex:1;background:linear-gradient(180deg,#1a237e 0%,#0f1761 100%);border-radius:8px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--yellow);font-weight:900;font-size:24px;letter-spacing:1px;font-style:italic}
+  .hv-classroom .desks{display:flex;gap:6px}
+  .hv-classroom .desk{flex:1;height:24px;background:#f4f5f8;border-radius:4px;position:relative;border:1px solid #e3e7ef}
+  .hv-classroom .desk::before{content:"";position:absolute;left:50%;top:-9px;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:linear-gradient(180deg,#f5d2b3,#e3b48d);border:2px solid #fff}
+  .hv-tag{position:absolute;font-weight:900;font-size:10px;letter-spacing:1.2px;padding:5px 10px;border-radius:6px;color:#fff;z-index:5}
+  .hv-tag.online{left:12%;top:6%;background:#dc3545}
+  .hv-tag.live{right:8%;top:6%;background:var(--navy);box-shadow:0 4px 10px rgba(0,0,0,.2)}
+  .hv-flag{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:36px;z-index:6;background:rgba(255,255,255,.95);width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+
+  /* PROMO BAND */
+  .promo{background:linear-gradient(135deg,#1a237e 0%,#0f1761 50%,#dc3545 100%);color:#fff;padding:30px 0;position:relative;overflow:hidden}
+  .promo::before{content:"⭐";position:absolute;left:-10px;top:50%;transform:translateY(-50%);font-size:140px;opacity:.08}
+  .promo::after{content:"⭐";position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-size:120px;opacity:.08}
+  .promo-row{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;position:relative}
+  .promo-left .pre{margin:0 0 4px;font-weight:900;color:var(--yellow);font-size:13px;letter-spacing:2px}
+  .promo-left .main{margin:0;font-weight:900;font-size:26px;letter-spacing:-.5px;line-height:1.05}
+  .promo-left .sub{margin:6px 0 0;font-weight:700;font-size:13px;color:#fff;opacity:.9}
+  .promo-mid{text-align:center}
+  .promo-mid .price-label{font-weight:900;font-size:11px;letter-spacing:2px;margin:0 0 4px;opacity:.85}
+  .promo-mid .price{font-weight:900;font-size:54px;letter-spacing:-2px;line-height:1;color:var(--yellow);margin:0}
+  .promo-mid .strike{margin:6px 0 0;font-weight:700;font-size:13px;color:#fff;opacity:.85}
+  .flip{display:flex;gap:8px}
+  .flip .digit{position:relative;width:62px;height:80px;border-radius:8px;background:linear-gradient(180deg,#fff 0%,#f0f3fa 50%,#fff 50.1%,#e9ecf1 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:54px;color:var(--navy);overflow:hidden}
+  .flip .digit:first-child{color:var(--green-2)}
+  .flip .digit::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:rgba(0,0,0,.18)}
+  .flip-label{text-align:center;color:#fff;font-weight:900;font-size:11px;letter-spacing:1.5px;margin-top:8px}
+
+  /* SECTIONS */
+  .sec{padding:90px 0;position:relative}
+  .sec-eyebrow{display:inline-block;color:var(--green-2);font-weight:900;font-size:12px;letter-spacing:3px;margin:0 0 12px}
+  .sec-eyebrow.pink{color:var(--pink)}
+  .sec-eyebrow.orange{color:var(--orange)}
+  .sec-eyebrow.red{color:var(--red)}
+  .sec h2{margin:0 0 14px;color:var(--navy);font-weight:900;font-size:44px;line-height:1.05;letter-spacing:-.8px;max-width:820px}
+  .sec h2 b{color:var(--green)}
+  .sec h2 .or{color:var(--orange)}
+  .sec h2 .r{color:var(--red)}
+  .sec .lead{margin:0 0 50px;color:#3a4070;font-size:17px;font-weight:500;line-height:1.55;max-width:720px}
+
+  /* TRUTH SECTION — edival pain point */
+  .truth{background:#0f1761;color:#fff;padding:90px 0;position:relative;overflow:hidden}
+  .truth::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1300px;height:1300px;background:radial-gradient(circle,rgba(220,53,69,.1) 0%,transparent 60%)}
+  .truth-h{position:relative;text-align:center;margin-bottom:54px}
+  .truth-h .pre{display:inline-block;color:var(--orange);font-weight:900;font-size:12px;letter-spacing:3px;margin:0 0 14px}
+  .truth-h h2{color:#fff;font-weight:900;font-size:48px;line-height:1.05;letter-spacing:-1px;margin:0 auto;max-width:880px}
+  .truth-h h2 .y{color:var(--yellow)}
+  .truth-h h2 .g{color:var(--green)}
+  .truth-h .lead{color:#bcc3e8;margin:18px auto 0;max-width:620px;font-size:17px;font-weight:500;line-height:1.55}
+
+  .pain-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .pain{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px 26px}
+  .pain.r{border-color:rgba(220,53,69,.4);background:linear-gradient(180deg,rgba(220,53,69,.08),rgba(220,53,69,.02))}
+  .pain.o{border-color:rgba(245,166,35,.4);background:linear-gradient(180deg,rgba(245,166,35,.08),rgba(245,166,35,.02))}
+  .pain .ic{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;margin-bottom:14px}
+  .pain.r .ic{background:rgba(220,53,69,.25);color:#ff8a8a}
+  .pain.o .ic{background:rgba(245,166,35,.25);color:var(--yellow)}
+  .pain h3{margin:0 0 8px;font-weight:900;font-size:18px;color:#fff;letter-spacing:-.2px;line-height:1.25}
+  .pain p{margin:0;color:#bcc3e8;font-weight:500;font-size:14px;line-height:1.55}
+  .pain p b{color:#fff;font-weight:800}
+
+  /* FOR YOU — adults vs kids tabs */
+  .foryou{background:#fff}
+  .audience-tabs{display:flex;gap:10px;margin:30px 0 30px;justify-content:center;flex-wrap:wrap}
+  .audience-tabs button{appearance:none;border:2px solid #e3e7ef;background:#fff;color:var(--navy);font:900 13px/1 'Montserrat',sans-serif;letter-spacing:.6px;padding:14px 24px;border-radius:999px;cursor:pointer;display:flex;align-items:center;gap:10px;transition:all .2s ease;text-transform:uppercase}
+  .audience-tabs button .ic{font-size:18px}
+  .audience-tabs button.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .audience-tabs button.active.kids{background:var(--orange);border-color:var(--orange)}
+
+  .audience-pane{display:none}
+  .audience-pane.active{display:block}
+  .for-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+  .for-text h3{margin:0 0 14px;color:var(--navy);font-weight:900;font-size:32px;letter-spacing:-.5px;line-height:1.1}
+  .for-text h3 b{color:var(--green)}
+  .for-text h3 .or{color:var(--orange)}
+  .for-text .desc{margin:0 0 22px;color:#3a4070;font-size:15.5px;font-weight:500;line-height:1.6}
+  .for-text .desc b{color:var(--navy);font-weight:800}
+  .for-text ul{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:10px}
+  .for-text li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.4}
+  .for-text li::before{content:"✓";color:var(--green);font-weight:900;flex-shrink:0;font-size:16px}
+  .for-text .who{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+  .for-text .who .chip{background:#f4f5f8;color:var(--navy);font-weight:800;font-size:11.5px;letter-spacing:.5px;padding:8px 14px;border-radius:999px;border:1px solid #e3e7ef}
+  .for-text .who .chip.hot{background:#fff7e6;color:var(--orange);border-color:#f5d2a3}
+
+  .for-vis{position:relative;aspect-ratio:1/1;background:linear-gradient(135deg,#f4f5f8 0%,#fff 100%);border-radius:24px;border:1px solid #e3e7ef;padding:30px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .for-vis::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(122,193,66,.15) 0%,transparent 60%)}
+  .for-vis .scene{position:relative;width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .for-vis .scene .panel{background:#fff;border-radius:14px;box-shadow:0 10px 24px rgba(15,23,97,.08);padding:14px;display:flex;flex-direction:column;gap:8px;position:relative}
+  .for-vis .scene .panel.dark{background:linear-gradient(135deg,#1a237e,#0f1761);color:#fff}
+  .for-vis .scene .panel .badge{font-weight:900;font-size:9px;letter-spacing:1.2px;padding:3px 8px;border-radius:4px;align-self:flex-start;background:var(--green);color:#fff}
+  .for-vis .scene .panel.dark .badge{background:var(--orange)}
+  .for-vis .scene .panel .body{flex:1;display:flex;flex-direction:column;gap:6px;justify-content:center;align-items:center}
+  .for-vis .scene .panel .face{width:54px;height:54px;border-radius:50%;background:linear-gradient(180deg,#f5d2b3,#e3b48d);border:3px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+  .for-vis .scene .panel .lbl{font-weight:900;font-size:11px;color:var(--navy);text-align:center;letter-spacing:.3px}
+  .for-vis .scene .panel.dark .lbl{color:#fff}
+  .for-vis .scene .panel .stars{color:var(--orange);font-size:14px}
+
+  /* BIG WIN BOX */
+  .winbox{background:linear-gradient(180deg,#fff7e6 0%,#fff 100%);border-radius:18px;padding:24px 26px;border:2px dashed var(--orange);margin:0 0 20px;display:flex;gap:18px;align-items:center}
+  .winbox .ic{font-size:30px}
+  .winbox p{margin:0;color:var(--navy);font-weight:800;font-size:14px;line-height:1.45}
+  .winbox p b{color:var(--orange)}
+
+  /* HQ + ONLINE SECTION */
+  .hq{background:linear-gradient(180deg,#f4f5f8 0%,#fff 100%);padding:90px 0;position:relative}
+  .hq-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .hq-card{position:relative;background:#fff;border-radius:24px;padding:30px;box-shadow:0 24px 50px rgba(15,23,97,.08);border:1px solid #e3e7ef}
+  .hq-card.online{background:linear-gradient(135deg,#1a237e 0%,#0f1761 100%);color:#fff;border-color:transparent}
+  .hq-card .photo{width:100%;aspect-ratio:1.3/1;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#a4c8e1,#7aa9c9);position:relative;margin-bottom:20px;border:4px solid #fff;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+  .hq-card.online .photo{background:linear-gradient(135deg,#0f1761,#3949ab);border-color:rgba(255,255,255,.1);box-shadow:0 10px 24px rgba(0,0,0,.3)}
+  .hq-card .photo img{width:100%;height:100%;object-fit:cover}
+  .hq-card .photo .pin{position:absolute;left:50%;bottom:-22px;transform:translateX(-50%);width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;border:4px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.2)}
+  .hq-card .pre{display:inline-block;font-weight:900;font-size:11px;letter-spacing:2px;margin:8px 0 8px;color:var(--green-2)}
+  .hq-card.online .pre{color:var(--orange)}
+  .hq-card h3{margin:0 0 14px;color:var(--navy);font-weight:900;font-size:30px;letter-spacing:-.5px;line-height:1.05}
+  .hq-card.online h3{color:#fff}
+  .hq-card h3 .r{color:var(--red)}
+  .hq-card .info{display:flex;flex-direction:column;gap:8px;margin:0 0 20px}
+  .hq-card .info .row{display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600;color:var(--navy);line-height:1.4}
+  .hq-card.online .info .row{color:#dfe4ff}
+  .hq-card .info .row a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+  .hq-card.online .info .row a{color:#fff}
+  .hv-tag img{max-height:24px;width:auto}
+  .hv-tag.live img{filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+  .hq-card .info .row .ic{flex-shrink:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;color:var(--green);font-weight:900;font-size:14px}
+  .hq-card.online .info .row .ic{color:var(--orange)}
+  .hq-card .feats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 20px}
+  .hq-card .feats .feat{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--navy);background:#f4f5f8;padding:10px 12px;border-radius:8px}
+  .hq-card.online .feats .feat{background:rgba(255,255,255,.06);color:#dfe4ff;border:1px solid rgba(255,255,255,.1)}
+  .hq-card .feats .feat::before{content:"✓";color:var(--green);font-weight:900;flex-shrink:0}
+
+  /* DASHED ARC ORNAMENT — like reference image */
+  .arc-deco{position:absolute;width:340px;height:340px;border:2px dashed var(--green);border-radius:50%;left:-60px;top:-60px;opacity:.5;pointer-events:none}
+  .arc-deco.r{left:auto;right:-60px;top:auto;bottom:-60px;border-color:var(--orange)}
+
+  /* WHY US */
+  .why{background:#fff;padding:90px 0}
+  .why-h{text-align:center;margin-bottom:50px}
+  .why-h .pre{color:var(--orange);font-weight:900;font-size:12px;letter-spacing:3px;margin:0 0 12px;display:inline-block}
+  .why-h h2{margin:0 auto;font-weight:900;font-size:42px;color:var(--navy);letter-spacing:-.8px;max-width:780px;line-height:1.05}
+  .why-h h2 b{color:var(--green)}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .why-card{background:#f7f9fc;border-radius:16px;padding:26px 22px;border:1px solid #e3e7ef;border-top:5px solid var(--green);transition:transform .15s ease}
+  .why-card:hover{transform:translateY(-4px)}
+  .why-card:nth-child(2){border-top-color:var(--orange)}
+  .why-card:nth-child(3){border-top-color:var(--navy)}
+  .why-card:nth-child(4){border-top-color:var(--red)}
+  .why-card .ic{width:44px;height:44px;border-radius:10px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;margin-bottom:14px}
+  .why-card:nth-child(2) .ic{background:var(--orange)}
+  .why-card:nth-child(3) .ic{background:var(--green)}
+  .why-card:nth-child(4) .ic{background:var(--red)}
+  .why-card h3{margin:0 0 8px;color:var(--navy);font-weight:900;font-size:16px;letter-spacing:.2px;line-height:1.2}
+  .why-card p{margin:0;color:#3a4070;font-weight:500;font-size:13px;line-height:1.55}
+  .why-card p b{color:var(--navy);font-weight:800}
+
+  /* CERTIFICATIONS */
+  .certs{background:linear-gradient(180deg,#fff 0%,#f7f9fc 100%);padding:50px 0;border-top:1px solid #e3e7ef;border-bottom:1px solid #e3e7ef}
+  .certs-row{display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap}
+  .certs-row .item{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+  .certs-row .item .seal{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--navy),#3949ab);color:var(--yellow);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;letter-spacing:.5px;box-shadow:0 8px 18px rgba(15,23,97,.2);border:3px solid #fff;text-align:center;line-height:1.1;padding:6px}
+  .certs-row .item.alt .seal{background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff}
+  .certs-row .item.alt2 .seal{background:linear-gradient(135deg,var(--orange),#e08f10);color:#fff}
+  .certs-row .item .name{font-weight:900;color:var(--navy);font-size:13px;letter-spacing:.3px}
+  .certs-row .item .desc{font-weight:600;color:var(--muted);font-size:11px;letter-spacing:.3px;max-width:140px;line-height:1.4}
+
+  /* PRICING */
+  .pricing{padding:90px 0;background:linear-gradient(180deg,#fff7e6 0%,#fff 100%);text-align:center}
+  .pricing h2{margin:0 0 8px;color:var(--navy);font-weight:900;font-size:38px;letter-spacing:-.5px}
+  .pricing h2 b{color:var(--orange)}
+  .pricing .sub{margin:8px 0;color:var(--navy);font-weight:800;font-size:14px;letter-spacing:.4px}
+  .pricing .fine{margin:0 auto 20px;color:#9aa0b6;font-weight:700;font-size:11.5px;letter-spacing:1.2px;max-width:760px;line-height:1.5}
+  .pricing .note{margin:28px auto 0;max-width:900px;text-align:left;background:#fff;border:1px solid #e3e7ef;border-radius:14px;padding:22px 26px;box-shadow:0 6px 18px rgba(15,23,97,.06)}
+  .pricing .note h4{margin:0 0 12px;color:var(--navy);font-weight:900;font-size:14px;letter-spacing:.5px}
+  .pricing .note ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+  .pricing .note li{font-size:13px;font-weight:600;color:#3a4070;line-height:1.45}
+  .pricing .note li b{color:var(--navy)}
+  .social-links{display:flex;align-items:center;gap:12px}
+  .social-links a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.06);transition:background .15s ease}
+  .social-links a:hover{background:rgba(255,255,255,.14)}
+  .social-links img{width:20px;height:20px;display:block}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto;align-items:stretch}
+  .plan{background:#fff;color:var(--ink);border-radius:18px;padding:30px 22px;text-align:center;position:relative;box-shadow:0 8px 22px rgba(15,23,97,.08);border:2px solid var(--green);display:flex;flex-direction:column}
+  .plan.featured{border:3px solid var(--orange);background:linear-gradient(180deg,#fff 0%,#fff7e6 100%);transform:scale(1.04);box-shadow:0 16px 40px rgba(245,166,35,.22)}
+  .plan.kids{border:2px solid var(--orange);background:linear-gradient(180deg,#fff 0%,#fff9ec 100%)}
+  .plan.kids .disc{background:var(--orange)}
+  .plan.kids .feat-list li::before{color:var(--orange)}
+  .plan.kids .buy{background:linear-gradient(180deg,#ffb544,#e08f10)}
+  .plan .ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-weight:900;font-size:11px;letter-spacing:1px;padding:6px 16px;border-radius:6px;white-space:nowrap}
+  .plan h3{margin:0 0 6px;color:var(--navy);font-weight:900;font-size:18px;letter-spacing:.4px}
+  .plan .who{color:var(--muted);font-weight:700;font-size:11.5px;letter-spacing:.3px;margin:0 0 18px}
+  .plan .strike{color:var(--muted);font-weight:700;font-size:13px;margin:14px 0 4px}
+  .plan .strike s{opacity:.7}
+  .plan .price{color:var(--navy);font-weight:900;font-size:48px;letter-spacing:-1.5px;margin:6px 0 2px;line-height:1}
+  .plan .price small{font-size:18px;color:var(--muted);font-weight:800;letter-spacing:0}
+  .plan .per{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.4px;margin:0 0 18px}
+  .plan .disc{display:inline-block;background:var(--green);color:#fff;font-weight:900;font-size:13px;letter-spacing:.5px;padding:6px 14px;border-radius:999px;margin:0 0 18px}
+  .plan.featured .disc{background:var(--orange)}
+  .plan .feat-list{list-style:none;padding:0;margin:0 0 22px;text-align:left;display:flex;flex-direction:column;gap:8px;flex:1}
+  .plan .feat-list li{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;font-weight:600;line-height:1.4;color:var(--ink)}
+  .plan .feat-list li::before{content:"✓";color:var(--green);font-weight:900;flex-shrink:0}
+  .plan.featured .feat-list li::before{color:var(--orange)}
+  .plan .buy{display:inline-block;background:linear-gradient(180deg,#9ad96a,#5fa733);color:#fff;font-weight:800;font-style:italic;padding:13px 22px;border-radius:999px;border:none;cursor:pointer;font-size:13px;width:100%}
+  .plan.featured .buy{background:linear-gradient(180deg,#ffb544,#e08f10)}
+
+  /* TESTIMONIALS */
+  .testi{padding:90px 0;background:linear-gradient(135deg,#1a237e 0%,#0f1761 100%);color:#fff;position:relative;overflow:hidden}
+  .testi::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(220,53,69,.15) 0%,transparent 60%);pointer-events:none}
+  .testi-h{text-align:center;margin-bottom:46px;position:relative}
+  .testi-h .pre{color:var(--orange);font-weight:900;font-size:12px;letter-spacing:3px;margin:0 0 12px;display:inline-block}
+  .testi-h h2{margin:0;color:#fff;font-weight:900;font-size:40px;letter-spacing:-.5px}
+  .testi-h h2 b{color:var(--green)}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1180px;margin:0 auto;position:relative}
+  .quote{position:relative;background:#fff;border-radius:16px;padding:34px 28px 26px;color:var(--navy);box-shadow:6px 6px 0 rgba(0,0,0,.18)}
+  .quote .qm{position:absolute;font-size:60px;line-height:1;color:var(--green);font-weight:900;font-family:Georgia,serif;top:8px;left:18px}
+  .quote .tag{position:absolute;top:16px;right:16px;font-weight:900;font-size:9.5px;letter-spacing:1.2px;padding:4px 9px;border-radius:4px;background:var(--orange);color:#fff}
+  .quote .tag.adult{background:var(--navy)}
+  .quote .tag.kid{background:var(--orange)}
+  .quote .tag.teen{background:var(--green)}
+  .quote p{color:var(--navy);font-weight:600;font-size:14px;line-height:1.55;margin:34px 0 18px}
+  .quote .who{display:flex;align-items:center;gap:12px}
+  .quote .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#cfd6e2,#dde2ec);border:2px solid #fff;flex-shrink:0}
+  .quote .name{color:var(--navy);font-weight:900;font-size:13px}
+  .quote .meta{color:var(--muted);font-weight:700;font-size:11px;letter-spacing:.3px}
+  .quote .stars{color:var(--orange);font-size:13px;margin-top:2px}
+
+  /* FAQ */
+  .faq{padding:80px 0 60px;background:#f7f9fc}
+  .faq h2{margin:0 0 30px;text-align:center;color:var(--navy);font-weight:900;font-size:34px;letter-spacing:.3px}
+  .faq h2 b{color:var(--green)}
+  .faq-list{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .qa{background:#fff;border-radius:12px;padding:14px 22px;border-left:6px solid var(--green);border-right:6px solid var(--navy);cursor:pointer}
+  .qa:nth-child(even){border-left-color:var(--navy);border-right-color:var(--orange)}
+  .qa .qrow{display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .qa .q{color:var(--navy);font-weight:900;font-size:13.5px;letter-spacing:.3px;margin:0}
+  .qa .chev{color:var(--navy);font-weight:900;font-size:18px;transition:transform .2s ease}
+  .qa .a{color:var(--navy);font-weight:600;font-size:13px;line-height:1.55;margin:0;max-height:0;overflow:hidden;transition:max-height .25s ease, margin .25s ease}
+  .qa.open .a{max-height:320px;margin-top:8px}
+  .qa.open .chev{transform:rotate(180deg)}
+
+  /* FINAL CTA */
+  .final{padding:100px 0;background:linear-gradient(135deg,#1a237e 0%,#0f1761 50%,#dc3545 130%);color:#fff;text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(circle,rgba(122,193,66,.18) 0%,transparent 70%)}
+  .final::after{content:"⭐";position:absolute;right:8%;top:18%;font-size:80px;opacity:.08}
+  .final h2{margin:0 0 14px;font-weight:900;font-size:48px;letter-spacing:-1px;position:relative;line-height:1.05}
+  .final h2 .y{color:var(--yellow)}
+  .final h2 .g{color:var(--green)}
+  .final h2 .r{color:#ff8a8a}
+  .final p{margin:0 0 30px;color:#dfe4ff;font-weight:600;font-size:17px;position:relative;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.55}
+  .final p b{color:var(--yellow);font-weight:900}
+  .final .row{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;align-items:center}
+  .final .cta-pill{font-size:16px;padding:18px 36px}
+  .final .meta{margin-top:20px;color:#bcc3e8;font-weight:700;font-size:12px;letter-spacing:.5px;position:relative}
+
+  /* WA fab */
+  .wa-fab{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(37,211,102,.45);z-index:50;cursor:pointer;border:none}
+  .wa-fab::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid #25d366;opacity:.5;animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.15);opacity:0}}
+
+  footer{background:#0a0f3d;color:#9aa0c8;padding:30px 0;font-size:12px;font-weight:600}
+  footer .row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+
+  @media (max-width:980px){
+    .hero-grid,.pain-grid,.for-grid,.hq-grid,.why-grid,.testi-grid,.plans{grid-template-columns:1fr}
+    h1.hero-h{font-size:42px}
+    .promo-row{grid-template-columns:1fr;text-align:center}
+    .truth-h h2,.why-h h2,.final h2{font-size:32px}
+    .plan.featured{transform:none}
+    .nav-meta{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div>
+    <a href="#" class="logo" aria-label="Fyr Lois">
+      <img src="logo-fyrlois.svg" alt="Fyr Lois" width="140" height="53">
+    </a>
+    <span class="usa-tag"><img src="flag-usa-tag%201.svg" alt="" width="22" height="14"> USA · FLORIDA</span>
+  </div>
+  <div class="nav-meta">
+    <a class="phone" href="tel:+13055105259"><img src="icon-set-Phone Green.svg" alt="" width="14" height="14"> +1 (305) 510-5259</a>
+    <a class="cta-pill" href="#wa" data-wa>
+      <span class="wa">
+        <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+      </span>
+      Clase de prueba gratis
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-eyebrow">FLORIDA · 27 AÑOS · ONLINE Y PRESENCIAL</span>
+      <h1 class="hero-h">Llevas <span class="or">años</span> en USA — y <span class="green">el inglés todavía no llega solo.</span></h1>
+      <p class="hero-sub">No es porque no eres inteligente. No es porque no te esfuerzas. <b>El inglés no se aprende "escuchando por ahí"</b> — y menos en Florida, donde puedes vivir años hablando solo español. Si ya te cansaste de quedarte callado en el trabajo, en la escuela de tus hijos, o en la cita médica — <b>aquí empieza otra historia.</b></p>
+      <p class="hero-promise">⭐ Profesores reales. Método europeo certificado. Sin app. Sin robots.</p>
+
+      <div class="mode-toggle" id="modeToggle">
+        <button class="active" data-mode="online"><span class="ic"><img src="icon-set-Online WT.svg" alt="" width="16" height="16"></span> Clases Online</button>
+        <button data-mode="inperson"><span class="ic"><img src="icon-set-Location WT.svg" alt="" width="16" height="16"></span> Presencial en Kissimmee</button>
+      </div>
+
+      <div class="hero-ctas">
+        <button class="cta-pill" data-wa>
+          <span class="wa">
+            <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+          </span>
+          Reservar clase de prueba gratis
+        </button>
+        <span class="ghost">⏱ Respuesta por WhatsApp en menos de 10 min</span>
+      </div>
+      <div class="hero-stats">
+        <div class="s"><div class="n">27</div><div class="l">Años enseñando inglés</div></div>
+        <div class="s"><div class="n or">CEFR</div><div class="l">Método certificado europeo</div></div>
+        <div class="s"><div class="n r">FL</div><div class="l">Sede HQ Kissimmee</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-visual" data-asset="hero-collage" data-asset-note="Replace with real composite: adult-on-laptop photo + classroom photo. See Assets.md §HERO">
+        <span class="hv-tag online"><img src="tag-en-vivo.svg" alt="En vivo · Online" height="22" style="display:block"></span>
+        <span class="hv-tag live" style="padding:0;background:transparent;box-shadow:none"><img src="tag-presencial.svg" alt="Presencial · Kissimmee" height="22" style="display:block"></span>
+        <div class="hv-card hv-screen">
+          <div class="bar"><i></i><i></i><i></i><div class="url"></div></div>
+          <div class="grid">
+            <div class="tile teach"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+          </div>
+        </div>
+        <div class="hv-card hv-classroom">
+          <div class="board">FYR LOIS</div>
+          <div class="desks"><div class="desk"></div><div class="desk"></div><div class="desk"></div><div class="desk"></div></div>
+        </div>
+        <span class="hv-flag" style="font-size:0;padding:8px"><img src="flag-usa-tag%202.svg" alt="USA" width="40" height="40" style="display:block"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+  <div class="wrap promo-row">
+    <div class="promo-left">
+      <p class="pre">⭐ OFERTA LIMITADA HASTA EL FINAL DE MAYO</p>
+      <p class="main">Primera clase <b>GRATIS</b> + matrícula sin costo si te inscribes esta semana</p>
+      <p class="sub">Online o presencial en Kissimmee · Adultos · Niños · Adolescentes</p>
+    </div>
+    <div>
+      <div class="flip" id="flip">
+        <div class="digit" id="d1">0</div>
+        <div class="digit" id="d2">2</div>
+        <div class="digit" id="d3">8</div>
+      </div>
+      <p class="flip-label">CUPOS DE PRUEBA ESTA SEMANA</p>
+    </div>
+    <div class="promo-mid">
+      <p class="price-label">DESDE</p>
+      <p class="price">$240<small style="font-size:18px;letter-spacing:0">/mes</small></p>
+      <p class="strike">Modalidad financiada · también desde $160/mes · USD</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUTH / PAIN -->
+<section class="truth">
+  <div class="wrap">
+    <div class="truth-h">
+      <span class="pre">LA VERDAD QUE NADIE TE DICE</span>
+      <h2>En español <span class="y">eras tú.</span><br>En inglés <span class="g">apenas existes.</span></h2>
+      <p class="lead">En tu país eras la persona que hablaba en reuniones, que tenía amigos, que ayudaba a sus hijos con la tarea. Aquí, callado en el trabajo, sonriendo cuando no entiendes, asintiendo "yes, yes" para que ya pase. <b>No es tu personalidad — es el idioma.</b> Y se arregla.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain r">
+        <div class="ic"><img src="pain-promotion Green.svg" alt="" width="32" height="32"></div>
+        <h3>"Mi compañero, que sabe menos, lo ascendieron a él"</h3>
+        <p>El que habla inglés <b>no es más inteligente que tú</b> — solo puede explicarse. Sin inglés, eres invisible para la mitad de las oportunidades en Florida.</p>
+      </div>
+      <div class="pain o">
+        <div class="ic"><img src="pain-school-kid Green.svg" alt="" width="32" height="32"></div>
+        <h3>"Mi hijo está callado en la escuela y no me dice nada"</h3>
+        <p>Niños hispanos en escuelas de Florida que no dominan inglés <b>se aíslan, se les baja la autoestima, sacan notas más bajas</b> — aunque sean brillantes. Esto se arregla con apoyo real, no con apps.</p>
+      </div>
+      <div class="pain">
+        <div class="ic"><img src="pain-translator Green.svg" alt="" width="32" height="32"></div>
+        <h3>"Llevo 8 años aquí y todavía pido el traductor"</h3>
+        <p>El "ya lo voy a agarrar viviendo aquí" <b>no funciona</b> en zonas como Kissimmee, Doral, Hialeah — donde puedes vivir años en español. Tu cerebro aprende lo que practica, no lo que escucha de fondo.</p>
+      </div>
+      <div class="pain">
+        <div class="ic"><img src="pain-silent-party Green.svg" alt="" width="32" height="32"></div>
+        <h3>"Yo era el alma de la fiesta — y aquí no hablo"</h3>
+        <p>Eras carismático, gracioso, popular en español. Aquí pareces tímido. No cambiaste tú — <b>cambió tu vocabulario</b>. Te devolvemos tu voz.</p>
+      </div>
+      <div class="pain o">
+        <div class="ic"><img src="pain-college-prep Green.svg" alt="" width="32" height="32"></div>
+        <h3>"Mi hija va a aplicar a la universidad y le falta nivel"</h3>
+        <p>SAT, TOEFL, college essays — <b>el inglés decide qué universidad te acepta y qué beca recibes</b>. No esperes a Junior year para empezar.</p>
+      </div>
+      <div class="pain r">
+        <div class="ic"><img src="pain-bullying Green.svg" alt="" width="32" height="32"></div>
+        <h3>"Mi hijo sufre bullying y le da pena el acento"</h3>
+        <p>Los niños se ríen de lo diferente. Cuando el inglés se vuelve natural, <b>el bullying termina</b> — porque ya no hay nada de qué reírse. Y tu hijo recupera su confianza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR YOU — adults vs kids tabs -->
+<section class="sec foryou">
+  <div class="wrap">
+    <span class="sec-eyebrow">DOS PROGRAMAS, UN MÉTODO</span>
+    <h2>Para ti. <b>Y para tus hijos.</b></h2>
+    <p class="lead">Mismo método europeo certificado MCER, mismos profesores certificados TEFL, ahora adaptado a dos realidades muy distintas: el adulto que necesita inglés <b>para vivir</b> en Estados Unidos, y el niño que lo necesita <b>para crecer</b> en él.</p>
+
+    <div class="audience-tabs" id="audienceTabs">
+      <button class="active" data-pane="adults"><span class="ic"><img src="icon-set-Adults.svg" alt="" width="20" height="20"></span> Para Adultos</button>
+      <button data-pane="kids" class="kids"><span class="ic"><img src="icon-set-Kids.svg" alt="" width="20" height="20"></span> Para Niños y Adolescentes</button>
+    </div>
+
+    <!-- ADULTS PANE -->
+    <div class="audience-pane active" data-pane="adults">
+      <div class="for-grid">
+        <div class="for-text">
+          <h3>Recupera la voz que <b>siempre tuviste</b> — ahora en inglés.</h3>
+          <p class="desc">No importa para qué lo necesitas: un ascenso, una entrevista, hablar con la maestra de tu hijo, atender a un cliente, ir al doctor sin traductor. <b>Aprendes a hablar como adulto profesional</b>, no como turista. Sin apps que te corrigen con voz robot — con un profesor real, en grupo pequeño, que entiende de dónde vienes.</p>
+          <div class="who">
+            <span class="chip hot">⭐ Trabajadores</span>
+            <span class="chip">Profesionales</span>
+            <span class="chip">Emprendedores</span>
+            <span class="chip">Citizenship prep</span>
+            <span class="chip">Hospitality</span>
+            <span class="chip">Customer service</span>
+          </div>
+          <ul>
+            <li>Cualquier nivel — desde "no sé nada" hasta "ya entiendo pero no hablo"</li>
+            <li>Online en vivo o presencial en nuestra sede de Kissimmee, FL</li>
+            <li>Profesores certificados TEFL · método CEFR (A1 → C1)</li>
+            <li>Conversación desde el día 1 — sin tareas eternas, sin "luego hablamos"</li>
+            <li>Grupos pequeños con atención individual · puedes mezclar online y presencial</li>
+          </ul>
+          <div class="winbox">
+            <div class="ic">🎁</div>
+            <p><b>Prueba gratis sin compromiso:</b> primera clase real, con profesor real, evalúas tu nivel CEFR y sales con un plan claro — todo gratis.</p>
+          </div>
+          <button class="cta-pill" data-wa>
+            <span class="wa">
+              <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+            </span>
+            Reservar clase de prueba
+          </button>
+        </div>
+        <div class="for-vis" data-asset="adults-scene" data-asset-note="Replace with adult-student photo collage. See Assets.md §ADULTS">
+          <div class="scene">
+            <div class="panel">
+              <span class="badge">EN VIVO</span>
+              <div class="body"><div class="face"></div><div class="lbl">Tu profesor</div><div class="stars">★★★★★</div></div>
+            </div>
+            <div class="panel dark">
+              <span class="badge">TÚ</span>
+              <div class="body"><div class="face"></div><div class="lbl">Hablando inglés</div><div class="lbl" style="font-size:9px;opacity:.7">Día 1</div></div>
+            </div>
+            <div class="panel" style="grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-around">
+              <div style="display:flex;align-items:center;gap:8px"><div class="face" style="width:34px;height:34px"></div><span class="lbl" style="font-size:10px">Compañero</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><div class="face" style="width:34px;height:34px"></div><span class="lbl" style="font-size:10px">Compañera</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><div class="face" style="width:34px;height:34px"></div><span class="lbl" style="font-size:10px">Compañero</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIDS PANE -->
+    <div class="audience-pane" data-pane="kids">
+      <div class="for-grid">
+        <div class="for-text">
+          <h3>Tu hijo no tiene <span class="or">"un problema con inglés".</span> Tiene un sistema escolar que no espera a nadie.</h3>
+          <p class="desc">Las escuelas de Florida no se detienen a explicar en español. Si tu hijo no agarra el ritmo en inglés en los primeros años, <b>se atrasa en todo</b>: matemáticas, ciencias, lectura, amigos. No es porque sea menos inteligente — es porque está aprendiendo el idioma <b>al mismo tiempo</b> que aprende todo lo demás. Le damos el inglés por separado, para que en la escuela vuelva a ser él.</p>
+          <div class="who">
+            <span class="chip hot">⭐ Apoyo escolar</span>
+            <span class="chip">Niños recién llegados</span>
+            <span class="chip">Tareas en inglés</span>
+            <span class="chip">SAT / TOEFL teens</span>
+            <span class="chip">College prep</span>
+            <span class="chip">Confianza · anti-bullying</span>
+          </div>
+          <ul>
+            <li>3 niveles por edad: Little Stars (3-7), Champions (8-12), Teens (13-17)</li>
+            <li>Atención al niño que <b>está siendo dejado atrás en su clase</b> — no a turistas</li>
+            <li>Profesores bilingües que entienden el contexto hispano en Florida</li>
+            <li>Online o presencial en Kissimmee · puedes alternar según horario</li>
+            <li>Reportes regulares para que sepas cómo va — en español, claro</li>
+          </ul>
+          <div class="winbox">
+            <div class="ic">🎁</div>
+            <p><b>Evaluación gratis para tu hijo:</b> 30 minutos con un profesor, te decimos exactamente en qué nivel CEFR está y qué necesita. Sin compromiso.</p>
+          </div>
+          <button class="cta-pill orange" data-wa>
+            <span class="wa">
+              <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+            </span>
+            Evaluación gratis para mi hijo
+          </button>
+        </div>
+        <div class="for-vis" data-asset="kids-scene" data-asset-note="Replace with kid/teen photo collage. See Assets.md §KIDS">
+          <div class="scene">
+            <div class="panel">
+              <span class="badge">CHAMPIONS</span>
+              <div class="body"><div class="face"></div><div class="lbl">8-12 años</div><div class="stars">★★★★★</div></div>
+            </div>
+            <div class="panel dark">
+              <span class="badge">TEENS</span>
+              <div class="body"><div class="face"></div><div class="lbl">13-17 años</div><div class="lbl" style="font-size:9px;opacity:.7">SAT / TOEFL</div></div>
+            </div>
+            <div class="panel" style="grid-column:1/-1;flex-direction:row;align-items:center;gap:14px;padding:14px 18px">
+              <div class="face" style="width:42px;height:42px;flex-shrink:0"></div>
+              <div style="flex:1;text-align:left">
+                <div class="lbl" style="font-size:12px">"Mi hija pasó de C en Reading a A en un semestre"</div>
+                <div class="lbl" style="font-size:10px;color:var(--muted);font-weight:700;margin-top:4px">— Mamá de Sofía, 11 años · Orlando</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section class="certs">
+  <div class="wrap">
+    <div class="certs-row">
+      <div class="item">
+        <div class="seal" data-asset="cert-seal-cefr" data-asset-note="Replace with official CEFR seal/logo. See Assets.md §CERTS">CEFR<br>A1-C2</div>
+        <div class="name">Marco Común Europeo</div>
+        <div class="desc">El estándar mundial para medir nivel de inglés</div>
+      </div>
+      <div class="item alt">
+        <div class="seal" data-asset="cert-seal-tefl" data-asset-note="Replace with official TEFL seal/logo. See Assets.md §CERTS">TEFL<br>★★★</div>
+        <div class="name">Profesores certificados</div>
+        <div class="desc">Teaching English as a Foreign Language</div>
+      </div>
+      <div class="item alt2">
+        <div class="seal">27<br>AÑOS</div>
+        <div class="name">Trayectoria comprobada</div>
+        <div class="desc">Más de 100,000 alumnos certificados</div>
+      </div>
+      <div class="item">
+        <div class="seal" style="background:linear-gradient(135deg,#dc3545,#a82838);color:#fff">FL<br>HQ</div>
+        <div class="name">Sede en Kissimmee, FL</div>
+        <div class="desc">Empresa establecida en USA · no es un app</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HQ + ONLINE -->
+<section class="hq">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:50px">
+      <span class="sec-eyebrow">DÓNDE NOS ENCONTRARÁS</span>
+      <h2 style="margin:0 auto;color:var(--navy);font-weight:900;font-size:44px;letter-spacing:-.8px;max-width:780px;line-height:1.05">Una clase real. <b>Donde tú estés.</b></h2>
+      <p style="margin:14px auto 0;color:#3a4070;font-size:16px;font-weight:500;max-width:600px;line-height:1.55">Sede física en Florida para los que quieren la experiencia presencial. Plataforma en vivo para los que están en cualquier rincón de USA — o que esta semana les queda mejor desde casa.</p>
+    </div>
+    <div class="hq-grid">
+      <div class="hq-card" style="overflow:hidden">
+        <div class="arc-deco"></div>
+        <div class="photo" data-asset="hq-photo-kissimmee" data-asset-note="Replace with real exterior photo of Kissimmee HQ. See Assets.md §HQ" style="background:linear-gradient(180deg,#bcd9ec 0%,#7aa9c9 60%,#5a8cb0 100%);display:flex;align-items:flex-end;justify-content:center;padding:0;position:relative">
+          <!-- Stylized building silhouette -->
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,#a4c8e1 0%,#cfe1ee 60%,transparent 60%)"></div>
+          <div style="position:relative;width:90%;height:55%;display:flex;align-items:flex-end;gap:0">
+            <div style="flex:1.4;height:78%;background:linear-gradient(180deg,#d8c9a0 0%,#c0a878 100%);border-radius:6px 6px 0 0;position:relative;border-top:8px solid #7d3a2f">
+              <div style="position:absolute;left:10%;top:20%;width:18%;height:25%;background:#3a5168;border-radius:2px"></div>
+              <div style="position:absolute;left:36%;top:20%;width:18%;height:25%;background:#3a5168;border-radius:2px"></div>
+              <div style="position:absolute;left:62%;top:20%;width:18%;height:25%;background:#3a5168;border-radius:2px"></div>
+              <div style="position:absolute;left:30%;bottom:0;width:40%;height:55%;background:#5a8a8a;border-radius:4px 4px 0 0"></div>
+            </div>
+            <div style="flex:1;height:62%;background:linear-gradient(180deg,#cfd9b8 0%,#a8b890 100%);border-radius:6px 6px 0 0;position:relative;border-top:7px solid #7d3a2f">
+              <div style="position:absolute;left:18%;top:22%;width:25%;height:28%;background:#3a5168;border-radius:2px"></div>
+              <div style="position:absolute;left:55%;top:22%;width:25%;height:28%;background:#3a5168;border-radius:2px"></div>
+              <div style="position:absolute;left:38%;bottom:0;width:24%;height:55%;background:#5a8a8a;border-radius:4px 4px 0 0"></div>
+            </div>
+          </div>
+          <!-- Parking line in foreground -->
+          <div style="position:absolute;bottom:8%;left:0;right:0;height:14%;background:#525861"></div>
+          <div style="position:absolute;bottom:14%;left:0;right:0;height:2px;background:repeating-linear-gradient(90deg,#fff 0,#fff 12px,transparent 12px,transparent 28px);opacity:.6"></div>
+          <div class="pin"><img src="icon-set-Location.svg" alt="" width="24" height="24"></div>
+        </div>
+        <span class="pre">PRESENCIAL · FLORIDA</span>
+        <h3>Headquarter Kissimmee</h3>
+        <div class="info">
+          <div class="row"><span class="ic"><img src="icon-set-Location Green.svg" alt="" width="20" height="20"></span> 928 East Osceola Parkway, Kissimmee, FL 34744</div>
+          <div class="row"><span class="ic"><img src="icon-set-Phone Green.svg" alt="" width="20" height="20"></span> <a href="tel:+13055105259">+1 (305) 510-5259</a></div>
+          <div class="row"><span class="ic"><img src="icon-set-Time Green.svg" alt="" width="20" height="20"></span> Lun – Sáb · 8 AM – 9 PM</div>
+        </div>
+        <div class="feats">
+          <div class="feat">Salones modernos</div>
+          <div class="feat">Parqueo gratis</div>
+          <div class="feat">Grupos pequeños</div>
+          <div class="feat">Comunidad hispana</div>
+        </div>
+        <button class="cta-pill" data-wa style="width:100%;justify-content:center">
+          <span class="wa">
+            <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+          </span>
+          Visitar Kissimmee
+        </button>
+      </div>
+      <div class="hq-card online" style="overflow:hidden">
+        <div class="arc-deco r" style="border-color:rgba(245,166,35,.4)"></div>
+        <div class="photo" data-asset="online-mockup" data-asset-note="Replace with Zoom-style screenshot of real class. See Assets.md §ONLINE" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:#fff">
+          <img src="icon-set-Online.svg" alt="" width="72" height="72" style="opacity:.95">
+          <div style="font-weight:900;font-size:18px;letter-spacing:.5px">EN VIVO · NO GRABADO</div>
+          <div style="font-weight:600;font-size:13px;opacity:.8">Profesor real · Cámara prendida · Tu nivel CEFR real</div>
+          <div class="pin" style="background:var(--orange)">●</div>
+        </div>
+        <span class="pre">ONLINE · TODO USA</span>
+        <h3>Clases <span class="r">en vivo</span> desde donde estés</h3>
+        <div class="info">
+          <div class="row"><span class="ic"><img src="icon-set-World Green.svg" alt="" width="20" height="20"></span> Cualquier estado — Florida, Texas, NY, NJ, GA, CA…</div>
+          <div class="row"><span class="ic"><img src="icon-set-Calendar Green.svg" alt="" width="20" height="20"></span> Horarios mañana, tarde y noche · 7 días</div>
+          <div class="row"><span class="ic"><img src="icon-set-Zoom Green.svg" alt="" width="20" height="20"></span> Vía Zoom · clase chiquita, profesor te ve</div>
+        </div>
+        <div class="feats">
+          <div class="feat">Sin app</div>
+          <div class="feat">Sin grabaciones</div>
+          <div class="feat">Profesor humano</div>
+          <div class="feat">Mismos profes que sede</div>
+        </div>
+        <button class="cta-pill orange" data-wa style="width:100%;justify-content:center">
+          <span class="wa">
+            <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+          </span>
+          Empezar online
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <div class="wrap">
+    <div class="why-h">
+      <span class="pre">POR QUÉ FYR LOIS</span>
+      <h2>27 años de experiencia. <b>Cero apps.</b></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ic"><img src="icon-set-Adults Green.svg" alt="" width="26" height="26"></div>
+        <h3>Profesor humano, no robot</h3>
+        <p>Tu profesor te ve, te corrige, te pregunta por tu día. <b>Sin gamificación. Sin "¡Buen trabajo!" automático.</b> Conversación real con un humano que conoce tu nivel.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><img src="icon-set-World Green.svg" alt="" width="26" height="26"></div>
+        <h3>Método CEFR certificado</h3>
+        <p>El estándar europeo (A1, A2, B1, B2, C1, C2) que usan las universidades y empleadores serios. <b>Tu nivel es medible y oficial</b> — no una "barra de progreso".</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><img src="icon-set-Kids Green.svg" alt="" width="26" height="26"></div>
+        <h3>Hispanos para hispanos</h3>
+        <p>Fundada por hispanos hace 27 años. Sabemos por qué <b>hablas perfectamente en español pero no abres la boca en inglés</b>. Te damos confianza, no presión.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic"><img src="icon-set-Location Green.svg" alt="" width="26" height="26"></div>
+        <h3>Sede real en Florida</h3>
+        <p>Kissimmee HQ. Salones, profesores, comunidad. <b>Si algo pasa, hay una puerta donde tocar</b> — no un email de soporte que tarda 48 horas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="wrap">
+    <h2>PLANES <b>USA</b></h2>
+    <p class="sub">PRECIOS EN USD · FINANCIADO, CUOTAS O CONTADO</p>
+    <p class="fine">PRIMERA CLASE GRATIS · SIN TARJETA · SIN COMPROMISO · WHATSAPP +1 (305) 510-5259</p>
+    <div class="plans">
+      <div class="plan featured">
+        <span class="ribbon">MODALIDAD FINANCIADA</span>
+        <h3>PLAN FINANCIADO</h3>
+        <p class="who">Online o presencial · adultos y teens</p>
+        <p class="price">$240<small>/mes</small></p>
+        <p class="per">Inscripción $240 + 3 mensualidades de $240</p>
+        <p class="disc">TOTAL $960 USD</p>
+        <ul class="feat-list">
+          <li>Pago en 4 partes (inscripción + 3 meses)</li>
+          <li>Clases en vivo · profesor real</li>
+          <li>Grupos pequeños · método CEFR</li>
+          <li>Online por Zoom o presencial Kissimmee</li>
+          <li>Primera clase de prueba gratis</li>
+        </ul>
+        <button class="buy" data-wa>Consultar plan financiado</button>
+      </div>
+      <div class="plan">
+        <h3>INSCRIPCIÓN + CUOTAS</h3>
+        <p class="who">Entrada más accesible · 3 mensualidades</p>
+        <p class="price">$160<small>/mes</small></p>
+        <p class="per">Inscripción $80 + 3 mensualidades de $160</p>
+        <p class="disc">DESDE $80 DE INSCRIPCIÓN</p>
+        <ul class="feat-list">
+          <li>Misma calidad de clases en vivo</li>
+          <li>Ideal para empezar sin pago único alto</li>
+          <li>Adultos, niños y adolescentes</li>
+          <li>Material y reporte CEFR incluidos</li>
+          <li>Primera clase gratis · sin compromiso</li>
+        </ul>
+        <button class="buy" data-wa>Consultar cuotas</button>
+      </div>
+      <div class="plan kids">
+        <h3>ONLINE · CONTADO</h3>
+        <p class="who">Pago único · sin mensualidades</p>
+        <p class="price">$480<small> – $720</small></p>
+        <p class="per">1 nivel $480 · 2 niveles $720 · 1 nivel contado $624</p>
+        <p class="disc">MEJOR PRECIO POR NIVEL</p>
+        <ul class="feat-list">
+          <li>1 nivel completo: $480 USD</li>
+          <li>2 niveles: $720 USD</li>
+          <li>1 nivel de contado: $624 USD</li>
+          <li>Clases en vivo · sin apps</li>
+          <li>Evaluación CEFR incluida</li>
+        </ul>
+        <button class="buy" data-wa>Pagar de contado</button>
+      </div>
+    </div>
+    <div class="note">
+      <h4>Resumen de precios USA</h4>
+      <ul>
+        <li><b>Teléfono / WhatsApp:</b> +1 (305) 510-5259</li>
+        <li><b>Financiado:</b> $240/mes · inscripción $240 + 3 × $240 = $960 total</li>
+        <li><b>Cuotas:</b> inscripción $80 + 3 mensualidades de $160</li>
+        <li><b>Online contado:</b> 1 nivel $480 · 2 niveles $720 · 1 nivel contado $624</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="wrap">
+    <div class="testi-h">
+      <span class="pre">HISTORIAS REALES</span>
+      <h2>De callados <b>a líderes.</b></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="quote">
+        <span class="qm">"</span>
+        <span class="tag adult">ADULTO · ONLINE</span>
+        <p>Llevaba 11 años en Orlando con miedo de contestar el teléfono en inglés. En 6 meses con Fyr Lois online ya hago las llamadas yo, y este mes me ascendieron a supervisor. Mi compañero gringo no podía creerlo.</p>
+        <div class="who">
+          <div class="av" data-asset="testimonial-carlos" data-asset-note="Replace with real adult-student headshot. See Assets.md §TESTIMONIALS"></div>
+          <div>
+            <div class="name">CARLOS M.</div>
+            <div class="meta">SUPERVISOR · ORLANDO, FL</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="quote">
+        <span class="qm">"</span>
+        <span class="tag kid">NIÑO · PRESENCIAL</span>
+        <p>Mi hijo Diego entró al cuarto grado callado y triste, sacaba C en todo. Después de un año en Fyr Lois Kissimmee saca A's y me dice "mom, today I had so much fun at school." Nunca le había escuchado eso.</p>
+        <div class="who">
+          <div class="av" data-asset="testimonial-patricia" data-asset-note="Replace with real parent headshot. See Assets.md §TESTIMONIALS"></div>
+          <div>
+            <div class="name">PATRICIA G.</div>
+            <div class="meta">MAMÁ DE DIEGO, 10 AÑOS · KISSIMMEE</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="quote">
+        <span class="qm">"</span>
+        <span class="tag teen">TEEN · ONLINE</span>
+        <p>Estaba en Junior year y pensaba que no iba a entrar a ninguna universidad por mi inglés. Hice el programa Teens en Fyr Lois, saqué 1380 en SAT y entré a UCF con beca. Mis papás están llorando todavía.</p>
+        <div class="who">
+          <div class="av" data-asset="testimonial-isabella" data-asset-note="Replace with real teen-student headshot. See Assets.md §TESTIMONIALS"></div>
+          <div>
+            <div class="name">ISABELLA R.</div>
+            <div class="meta">SENIOR · MIAMI, FL · UCF '27</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <h2>PREGUNTAS <b>FRECUENTES</b></h2>
+    <div class="faq-list" id="faqList">
+      <div class="qa">
+        <div class="qrow"><p class="q">¿LAS CLASES SON EN INGLÉS O EN ESPAÑOL?</p><span class="chev">▾</span></div>
+        <p class="a">El profesor habla en inglés desde el día 1, pero te explica en español lo que necesitas para entender — sobre todo en niveles principiantes. No es un "English only" rígido que te paraliza. Es inmersión real con apoyo bilingüe cuando hace falta. Conforme avanzas, el español desaparece naturalmente.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">YA INTENTÉ APPS COMO DUOLINGO Y NO FUNCIONÓ. ¿POR QUÉ ESTO SÍ?</p><span class="chev">▾</span></div>
+        <p class="a">Las apps te enseñan vocabulario suelto, no a hablar. Estudios muestran que para hablar inglés necesitas <b>conversación real con corrección humana en tiempo real</b>. Eso es lo que hacemos: profesor, grupo pequeño, conversación. La app no se ríe contigo, no te corrige el acento, no te conoce. Tu profesor sí.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">VIVO EN OTRO ESTADO, ¿PUEDO TOMAR ONLINE?</p><span class="chev">▾</span></div>
+        <p class="a">Sí. Tenemos alumnos en Florida, Texas, Nueva York, Nueva Jersey, Georgia, California — donde quieras. Las clases online son en vivo por Zoom con el mismo profesor cada semana. No es una grabación, es clase real con cámara prendida.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿QUÉ EDADES ACEPTAN?</p><span class="chev">▾</span></div>
+        <p class="a">Adultos de cualquier edad y niños/adolescentes de 3 a 17 años, divididos en 3 niveles: Little Stars (3-7), Champions (8-12) y Teens (13-17). Los teens tienen un track específico para preparación SAT, TOEFL y college essays.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿MI HIJO ESTÁ ATRASADO EN LA ESCUELA, PUEDEN AYUDAR CON LA TAREA?</p><span class="chev">▾</span></div>
+        <p class="a">Sí, ese es uno de nuestros enfoques principales en USA. No solo enseñamos inglés en abstracto — trabajamos con el contexto escolar real de tu hijo, usamos sus libros, le ayudamos con lo que está viendo en clase.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿EMPIEZO DE CERO O TENGO QUE SABER ALGO?</p><span class="chev">▾</span></div>
+        <p class="a">Empiezas exactamente donde estés. La primera clase gratis incluye una evaluación CEFR sin presión — el profesor identifica tu nivel real (A1, A2, B1, etc.) y te ubica en el grupo correcto. Tenemos alumnos que llegaron sin saber decir "hello" y hoy hacen presentaciones en inglés en su trabajo.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿CUÁNTO TIEMPO HASTA HABLAR INGLÉS?</p><span class="chev">▾</span></div>
+        <p class="a">Honestidad: depende de cuánto practiques. Pero con 2-3 clases por semana + conversación entre clases, los alumnos típicos suben un nivel CEFR completo cada 4-6 meses. En un año puedes pasar de "no hablo nada" a "puedo trabajar en inglés". Sin milagros, sí con método.</p>
+      </div>
+      <div class="qa">
+        <div class="qrow"><p class="q">¿CÓMO ME INSCRIBO?</p><span class="chev">▾</span></div>
+        <p class="a">Escríbenos por WhatsApp al +1 (305) 510-5259. Hablamos en español, te preguntamos qué necesitas (tú o tu hijo), te ofrecemos una clase de prueba gratis con un profesor real. Si te gusta, sigues. Si no, no pasa nada. Sin tarjeta, sin compromiso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>Llevas <span class="r">demasiado tiempo</span> esperando<br>que el inglés <span class="g">llegue solo.</span></h2>
+    <p>No va a llegar. Pero <b>una clase de prueba gratis</b> sí puede llegar — esta misma semana. Sin tarjeta, sin compromiso, sin presión. Solo un profesor real diciéndote en qué nivel estás y qué necesitas para avanzar. Tú decides después.</p>
+    <div class="row">
+      <button class="cta-pill" data-wa>
+        <span class="wa">
+          <img src="social-icons-WA Green.svg" alt="" width="16" height="16">
+        </span>
+        Reservar mi clase gratis ahora
+      </button>
+    </div>
+    <p class="meta">⏱ Respuesta por WhatsApp en menos de 10 minutos · +1 (305) 510-5259 · Hablamos español</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <div>© 2026 Fyr Lois USA · Headquarter 928 East Osceola Pkwy, Kissimmee, FL 34744 · 27 años enseñando inglés</div>
+    <div class="social-links">
+      <a href="https://wa.me/13055105259" target="_blank" rel="noopener" aria-label="WhatsApp" data-wa><img src="social-icons-WA Green.svg" alt="WhatsApp"></a>
+      <a href="#" aria-label="Instagram"><img src="social-icons- IG.svg" alt="Instagram"></a>
+      <a href="#" aria-label="TikTok"><img src="social-icons.TK.svg" alt="TikTok"></a>
+      <a href="#" aria-label="YouTube"><img src="social-icons-YT.svg" alt="YouTube"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- DEV/DESIGNER MODE — toggle highlights all [data-asset] slots with dashed outline + tooltip -->
+<div id="devMode" style="position:fixed;left:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+  <button id="devToggle" style="background:#0e1340;color:#fff;border:0;border-radius:999px;padding:10px 16px;font:900 11px/1 'Montserrat',sans-serif;letter-spacing:1px;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,.25);display:inline-flex;align-items:center;gap:8px">
+    <span style="width:8px;height:8px;border-radius:50%;background:#7ac142;display:inline-block"></span>
+    DESIGNER MODE
+  </button>
+  <a id="devSpec" href="Fyr Lois USA Florida — Assets.md" target="_blank" style="display:none;background:#fff;color:#0e1340;border:2px dashed #7ac142;border-radius:10px;padding:8px 14px;font:900 11px/1.3 'Montserrat',sans-serif;letter-spacing:.5px;box-shadow:0 6px 14px rgba(0,0,0,.15);text-decoration:none">📄 Open Asset Spec (Assets.md)</a>
+</div>
+<style>
+  body.dev-on [data-asset]{outline:2px dashed #f5a623 !important;outline-offset:4px;position:relative}
+  body.dev-on [data-asset]::before{
+    content:attr(data-asset);position:absolute;top:-22px;left:0;background:#0e1340;color:#ffd400;font:900 9.5px/1 'Montserrat',sans-serif;letter-spacing:.8px;padding:4px 7px;border-radius:4px;white-space:nowrap;z-index:99;pointer-events:none
+  }
+  body.dev-on [data-asset]:hover::after{
+    content:attr(data-asset-note);position:absolute;top:100%;left:0;margin-top:6px;background:#fff;color:#0e1340;font:600 11px/1.4 'Montserrat',sans-serif;padding:8px 12px;border-radius:6px;max-width:280px;box-shadow:0 8px 20px rgba(0,0,0,.2);z-index:99;border:1px solid #e3e7ef
+  }
+</style>
+<script>
+  const devBtn=document.getElementById('devToggle'), devSpec=document.getElementById('devSpec');
+  let devOn=false;
+  devBtn.addEventListener('click',()=>{
+    devOn=!devOn;
+    document.body.classList.toggle('dev-on',devOn);
+    devSpec.style.display=devOn?'inline-block':'none';
+    devBtn.style.background=devOn?'#7ac142':'#0e1340';
+  });
+</script>
+
+<button class="wa-fab" data-wa aria-label="WhatsApp">
+  <img src="social-icons-WA WT.svg" alt="" width="30" height="30">
+</button>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('#faqList .qa').forEach(qa=>{
+    qa.addEventListener('click', ()=> qa.classList.toggle('open'));
+  });
+
+  // Mode toggle (online vs in-person) — visual emphasis only
+  document.querySelectorAll('#modeToggle button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('#modeToggle button').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // Audience tabs (adults vs kids)
+  document.querySelectorAll('#audienceTabs button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const target = btn.dataset.pane;
+      document.querySelectorAll('#audienceTabs button').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.audience-pane').forEach(p=>{
+        p.classList.toggle('active', p.dataset.pane===target);
+      });
+    });
+  });
+
+  // Cupos counter
+  const d1=document.getElementById('d1'), d2=document.getElementById('d2'), d3=document.getElementById('d3');
+  let cupos = parseInt(localStorage.getItem('flUsaCupos')||'28',10);
+  function setCupos(n){
+    n = Math.max(2, Math.min(99, n));
+    cupos = n; localStorage.setItem('flUsaCupos', n);
+    const s = String(n).padStart(3,'0');
+    d1.textContent = s[0]; d2.textContent = s[1]; d3.textContent = s[2];
+  }
+  setCupos(cupos);
+  setInterval(()=>{ if(Math.random() < 0.22){ setCupos(cupos - 1); } }, 24000);
+
+  // WhatsApp CTAs
+  const WA_NUMBER = '13055105259';
+  const WA_MSG = encodeURIComponent('Hola, me interesa una clase de prueba gratis con Fyr Lois USA.');
+  document.querySelectorAll('[data-wa]').forEach(el=>{
+    el.addEventListener('click', e=>{
+      e.preventDefault();
+      window.open(`https://wa.me/${WA_NUMBER}?text=${WA_MSG}`, '_blank');
+    });
+  });
+</script>
+</body>
+</html>
