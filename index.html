@@ -24,7 +24,7 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
-  body{font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+  body{font-family:'Montserrat',system-ui,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
   img{max-width:100%;display:block}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
@@ -387,6 +387,212 @@
     .truth-h h2,.why-h h2,.final h2{font-size:32px}
     .plan.featured{transform:none}
     .nav-meta{display:none}
+    .hero-visual{max-width:420px;margin:0 auto}
+    .sec h2{font-size:34px}
+    .testi-h h2{font-size:32px}
+    .pricing h2{font-size:32px}
+  }
+
+  /* Mobile */
+  @media (max-width:720px){
+    .wrap{padding:0 18px}
+    .nav{padding:14px 18px;flex-wrap:wrap;gap:12px}
+    .nav > div:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;min-width:0;flex:1}
+    .logo img{height:32px}
+    .usa-tag{margin-left:0;font-size:10px;padding:4px 10px 4px 7px;letter-spacing:1px}
+    .usa-tag img{width:18px}
+    h1.hero-h,h2.hero-h-alt{font-size:34px;letter-spacing:-1.2px}
+    .hero{padding:28px 0 56px}
+    .hero-sub{font-size:16px}
+    .hero-promise{font-size:12.5px;padding:8px 12px}
+    .hero-stats{flex-wrap:wrap;gap:16px 20px}
+    .hero-stats .s{flex:1 1 28%;min-width:88px}
+    .hero-stats .n{font-size:22px}
+    .mode-toggle{display:flex;flex-wrap:wrap;width:100%;max-width:100%}
+    .mode-toggle button{flex:1 1 auto;min-width:0;padding:9px 12px;font-size:11px;letter-spacing:.4px}
+    .cta-pill{font-size:14px;padding:12px 20px}
+    .sec{padding:64px 0}
+    .sec h2{font-size:30px;letter-spacing:-.5px}
+    .sec .lead{font-size:15px;margin-bottom:36px}
+    .truth{padding:64px 0}
+    .truth-h h2{font-size:28px}
+    .truth-h .lead{font-size:15px}
+    .pain{padding:22px 18px}
+    .for-text h3{font-size:26px}
+    .audience-tabs button{padding:12px 18px;font-size:12px}
+    .hq{padding:64px 0}
+    .hq-intro h2{font-size:30px!important}
+    .hq-intro p{font-size:15px!important}
+    .hq-card{padding:22px 18px}
+    .hq-card h3{font-size:26px}
+    .why{padding:64px 0}
+    .why-h h2{font-size:30px}
+    .pricing{padding:64px 0}
+    .testi{padding:64px 0}
+    .faq{padding:56px 0 48px}
+    .faq h2{font-size:28px}
+    .final{padding:72px 0}
+    .final h2{font-size:32px}
+    .final p{font-size:15px}
+    .promo-left .main{font-size:22px}
+    .promo-mid .price{font-size:44px}
+    .flip .digit{width:54px;height:70px;font-size:46px}
+    .flip{justify-content:center}
+    .certs-row{gap:28px 36px}
+    .certs-row .item .seal{width:72px;height:72px}
+    .plan .price{font-size:40px}
+    .winbox{flex-direction:column;align-items:flex-start;padding:18px}
+  }
+
+  /* Small phones */
+  @media (max-width:480px){
+    .wrap{padding:0 14px}
+    .nav{padding:12px 14px}
+    .logo img{height:28px}
+    .usa-tag{font-size:9px;letter-spacing:.8px;padding:3px 8px 3px 6px;gap:4px}
+    .usa-tag img{width:16px}
+    h1.hero-h,h2.hero-h-alt{font-size:28px;letter-spacing:-.8px;line-height:1.05}
+    .hero-eyebrow{font-size:9px;letter-spacing:1.2px;padding:6px 10px;margin-bottom:14px}
+    .hero-sub{font-size:14.5px;line-height:1.5;margin-bottom:14px}
+    .hero-promise{font-size:11.5px;margin-bottom:18px}
+    .mode-toggle{flex-direction:column;align-items:stretch;padding:4px}
+    .mode-toggle button{width:100%;justify-content:center;padding:10px 12px;font-size:10.5px}
+    .hero-ctas{flex-direction:column;align-items:stretch}
+    .hero-ctas .cta-pill,
+    .for-text .cta-pill,
+    .hq-card .cta-pill{width:100%;justify-content:center}
+    .hero-ctas .ghost{text-align:center;font-size:11px;line-height:1.4}
+    h1.hero-h,h2.hero-h-alt,.sec h2,.truth-h h2,.final h2{overflow-wrap:break-word}
+    .hero-stats{flex-direction:column;gap:14px;padding-top:18px;max-width:none}
+    .hero-stats .s{flex:none;display:flex;align-items:center;gap:12px}
+    .hero-stats .n{font-size:20px;min-width:52px}
+    .hero-stats .l{margin-top:0;text-transform:none;font-size:12px;letter-spacing:.2px}
+    .sec-eyebrow{font-size:10px;letter-spacing:2px}
+    .sec h2{font-size:26px}
+    .truth-h .pre,.why-h .pre,.testi-h .pre{font-size:10px;letter-spacing:2px}
+    .truth-h h2{font-size:24px}
+    .pain h3{font-size:16px}
+    .pain p{font-size:13px}
+    .audience-tabs{gap:8px;margin:20px 0 24px}
+    .audience-tabs button{width:100%;justify-content:center;padding:11px 14px;font-size:11px;letter-spacing:.4px}
+    .for-text h3{font-size:22px}
+    .for-text .desc{font-size:14px}
+    .for-text li{font-size:13px}
+    .for-text .who .chip{font-size:10.5px;padding:6px 10px}
+    .for-vis--adults img,.for-vis--adults{min-height:240px}
+    .for-kids-top{min-height:160px}
+    .for-kids-top img{min-height:160px}
+    .hq-intro{margin-bottom:32px!important}
+    .hq-intro h2{font-size:24px!important;letter-spacing:-.4px!important}
+    .hq-intro p{font-size:14px!important}
+    .hq-card .feats{grid-template-columns:1fr}
+    .hq-card h3{font-size:22px}
+    .hq-card .info .row{font-size:13px}
+    .why-card{padding:20px 16px}
+    .why-card h3{font-size:15px}
+    .promo{padding:24px 0}
+    .promo-left .pre{font-size:11px;letter-spacing:1.5px}
+    .promo-left .main{font-size:18px}
+    .promo-left .sub{font-size:12px}
+    .promo-mid .price{font-size:36px}
+    .promo-mid .price-label,.promo-mid .strike{font-size:11px}
+    .flip .digit{width:48px;height:62px;font-size:40px}
+    .flip-label{font-size:10px;letter-spacing:1px}
+    .plan{padding:24px 18px}
+    .plan h3{font-size:16px}
+    .plan .price{font-size:36px}
+    .plan .price small{font-size:15px}
+    .pricing .note{padding:16px 14px}
+    .quote{padding:28px 18px 20px}
+    .quote p{font-size:13px;margin-top:28px}
+    .quote .qm{font-size:48px}
+    .testi-h h2{font-size:26px}
+    .final h2{font-size:26px}
+    .final .cta-pill{width:100%;max-width:100%;justify-content:center;font-size:14px;padding:14px 22px}
+    .final .meta{font-size:11px;line-height:1.45;padding:0 4px}
+    .faq h2{font-size:24px}
+    .qa{padding:12px 14px;border-left-width:4px;border-right-width:4px}
+    .qa .q{font-size:12px}
+    .qa .qrow{gap:10px}
+    .wa-fab{width:52px;height:52px;right:14px;bottom:14px}
+    .wa-fab img{width:26px;height:26px}
+    footer{padding:24px 0;font-size:11px}
+    footer .row{flex-direction:column;text-align:center;gap:14px}
+    .arc-deco{width:220px;height:220px;left:-80px;top:-80px}
+    .arc-deco.r{right:-80px;bottom:-80px}
+  }
+
+  /* Ultra-narrow (~325px and up to 380px) */
+  @media (max-width:380px){
+    .wrap{padding:0 12px}
+    .nav{padding:10px 12px}
+    .logo img{height:26px}
+    .usa-tag{font-size:8px;letter-spacing:.5px;border-radius:4px}
+    h1.hero-h,h2.hero-h-alt{font-size:24px;letter-spacing:-.5px}
+    .hero{padding:22px 0 48px}
+    .hero-eyebrow{font-size:8px;letter-spacing:.9px;line-height:1.35;text-align:center;width:100%;justify-content:center}
+    .hero-sub{font-size:13.5px}
+    .hero-promise{font-size:10.5px;padding:8px 10px;line-height:1.4}
+    .mode-toggle button{font-size:10px;padding:9px 10px;gap:6px}
+    .mode-toggle button .ic img{width:14px;height:14px}
+    .cta-pill{font-size:12.5px;padding:11px 16px;gap:8px}
+    .cta-pill .wa{width:20px;height:20px}
+    .cta-pill .wa img{width:14px;height:14px}
+    .hero-stats .n{font-size:18px;min-width:44px}
+    .hero-stats .l{font-size:11px}
+    .sec{padding:48px 0}
+    .sec h2{font-size:22px;letter-spacing:-.3px}
+    .sec .lead{font-size:13.5px;margin-bottom:28px}
+    .truth{padding:48px 0}
+    .truth-h{margin-bottom:36px}
+    .truth-h h2{font-size:21px}
+    .truth-h .lead{font-size:13.5px}
+    .pain{padding:18px 14px;border-radius:14px}
+    .pain .ic{width:38px;height:38px}
+    .pain .ic img{width:26px;height:26px}
+    .pain h3{font-size:15px}
+    .for-text h3{font-size:19px}
+    .winbox p{font-size:12.5px}
+    .hq-intro h2{font-size:21px!important}
+    .hq-card{padding:18px 14px;border-radius:18px}
+    .hq-card h3{font-size:20px}
+    .hq-card .feats .feat{font-size:11.5px;padding:8px 10px}
+    .why-h h2{font-size:24px}
+    .why-h{margin-bottom:32px}
+    .why-card .ic{width:38px;height:38px}
+    .why-card p{font-size:12px}
+    .certs{padding:36px 0}
+    .certs-row{gap:20px 24px}
+    .certs-row .item .seal{width:64px;height:64px}
+    .certs-row .item .name{font-size:12px}
+    .certs-row .item .desc{font-size:10px;max-width:120px}
+    .pricing h2{font-size:24px}
+    .pricing .sub{font-size:12px}
+    .pricing .fine{font-size:10px;letter-spacing:.8px}
+    .promo-left .main{font-size:16px;line-height:1.15}
+    .promo-left .sub{font-size:11px;line-height:1.4}
+    .promo-mid .price{font-size:32px}
+    .promo-mid .price small{font-size:14px!important}
+    .flip{gap:5px}
+    .flip .digit{width:42px;height:54px;font-size:34px;border-radius:6px}
+    .plan .price{font-size:32px}
+    .plan .ribbon{font-size:10px;padding:5px 12px;top:-12px}
+    .plan .feat-list li{font-size:11.5px}
+    .plan .buy{font-size:12px;padding:11px 16px}
+    .testi-h h2{font-size:22px}
+    .quote .tag{font-size:8.5px;padding:3px 7px;top:12px;right:12px}
+    .final{padding:56px 0}
+    .final h2{font-size:22px}
+    .final p{font-size:14px;margin-bottom:22px}
+    .final .cta-pill{font-size:13px;padding:12px 18px}
+    .faq h2{font-size:21px}
+    .qa .q{font-size:11.5px;letter-spacing:0}
+    .qa .chev{font-size:16px}
+    footer .row > div{line-height:1.45;max-width:100%}
+    .hv-tag img{max-height:18px}
+    .hero-visual{border-radius:18px;max-width:100%}
+    .hero-visual--photo .hv-tag{max-width:46%}
+    .hero-visual--photo .hv-tag img{width:100%;height:auto;max-height:18px}
   }
 </style>
 </head>
@@ -666,7 +872,7 @@
 <!-- HQ + ONLINE -->
 <section class="hq">
   <div class="wrap">
-    <div style="text-align:center;margin-bottom:50px">
+    <div class="hq-intro" style="text-align:center;margin-bottom:50px">
       <span class="sec-eyebrow">DÓNDE NOS ENCONTRARÁS</span>
       <h2 style="margin:0 auto;color:var(--navy);font-weight:900;font-size:44px;letter-spacing:-.8px;max-width:780px;line-height:1.05">Una clase real. <b>Donde tú estés.</b></h2>
       <p style="margin:14px auto 0;color:#3a4070;font-size:16px;font-weight:500;max-width:600px;line-height:1.55">Sede física en Florida para los que quieren la experiencia presencial. Plataforma en vivo para los que están en cualquier rincón de USA — o que esta semana les queda mejor desde casa.</p>
