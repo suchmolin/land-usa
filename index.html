@@ -63,10 +63,12 @@
   .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.5);color:var(--yellow);font-weight:900;font-size:11px;letter-spacing:2px;padding:7px 14px;border-radius:999px;margin-bottom:20px}
   .hero-eyebrow::before{content:"⭐";font-size:13px}
 
-  h1.hero-h{font-size:60px;line-height:.98;letter-spacing:-2px;margin:0 0 18px;color:#fff;font-weight:900}
+  h1.hero-h,h2.hero-h-alt{font-size:60px;line-height:.98;letter-spacing:-2px;margin:0 0 18px;color:#fff;font-weight:900}
+  h2.hero-h-alt{margin-top:0}
   h1.hero-h .or{color:var(--orange)}
   h1.hero-h .green{color:var(--green);position:relative;display:inline-block}
-  h1.hero-h .green::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:10px;background:rgba(122,193,66,.25);border-radius:4px;z-index:-1}
+  h1.hero-h .green::after,h2.hero-h-alt .green::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:10px;background:rgba(122,193,66,.25);border-radius:4px;z-index:-1}
+  h2.hero-h-alt .or{color:var(--orange)}
   h1.hero-h .underline{position:relative;display:inline-block}
   h1.hero-h .underline::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:var(--orange);border-radius:2px}
 
@@ -204,10 +206,9 @@
   .for-vis .scene .panel .lbl{font-weight:900;font-size:11px;color:var(--navy);text-align:center;letter-spacing:.3px}
   .for-vis .scene .panel.dark .lbl{color:#fff}
   .for-vis .scene .panel .stars{color:var(--orange);font-size:14px}
-  .for-vis--dual{padding:0;aspect-ratio:auto;min-height:340px;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#fff;align-items:stretch}
-  .for-vis--dual::before{display:none}
-  .for-vis--dual .for-photo{overflow:hidden;border-radius:16px;min-height:300px}
-  .for-vis--dual .for-photo img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block}
+  .for-vis--adults{padding:0;aspect-ratio:auto;min-height:340px;background:#fff;display:block}
+  .for-vis--adults::before{display:none}
+  .for-vis--adults img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block;border-radius:16px}
   .for-vis--kids{padding:10px;aspect-ratio:auto;flex-direction:column;align-items:stretch;gap:10px;background:#fff}
   .for-vis--kids::before{display:none}
   .for-kids-top{display:grid;grid-template-columns:1fr 1fr;gap:8px;min-height:220px}
@@ -381,7 +382,7 @@
 
   @media (max-width:980px){
     .hero-grid,.pain-grid,.for-grid,.hq-grid,.why-grid,.testi-grid,.plans{grid-template-columns:1fr}
-    h1.hero-h{font-size:42px}
+    h1.hero-h,h2.hero-h-alt{font-size:42px}
     .promo-row{grid-template-columns:1fr;text-align:center}
     .truth-h h2,.why-h h2,.final h2{font-size:32px}
     .plan.featured{transform:none}
@@ -439,7 +440,8 @@
     <div>
       <span class="hero-eyebrow">FLORIDA · 27 AÑOS · ONLINE Y PRESENCIAL</span>
       <h1 class="hero-h">Llevas <span class="or">años</span> en USA y <span class="green">el inglés todavía no llega solo.</span></h1>
-      <p class="hero-sub">No es porque no eres inteligente. No es porque no te esfuerzas. <b>El inglés no se aprende "escuchando por ahí"</b> — y menos en Florida, donde puedes vivir años hablando solo español. Si ya te cansaste de quedarte callado en el trabajo, en la escuela de tus hijos, o en la cita médica — <b>aquí empieza otra historia.</b></p>
+      <p class="hero-sub">No es porque no eres inteligente. No es porque no te esfuerzas. <b>El inglés no se aprende "escuchando por ahí"</b> — y menos en Florida, donde puedes vivir años hablando solo español. Si ya te cansaste de quedarte callado en el trabajo, en la escuela de tus hijos, o en la cita médica.</p>
+      <h2 class="hero-h-alt">Aquí empieza tu <span class="green">historia nueva</span> — con confianza en <span class="or">inglés</span></h2>
       <p class="hero-promise">⭐ Profesores reales. Método europeo certificado. Sin app. Sin robots.</p>
 
       <div class="mode-toggle" id="modeToggle">
@@ -583,9 +585,8 @@
             Reservar clase de prueba
           </button>
         </div>
-        <div class="for-vis for-vis--dual">
-          <div class="for-photo"><img src="hero-photo-mosaic.png" alt="Adultos aprendiendo inglés con Fyr Lois"></div>
-          <div class="for-photo"><img src="adult-vis-scene.png" alt="Clase presencial para adultos en Kissimmee"></div>
+        <div class="for-vis for-vis--adults">
+          <img src="adult-vis-scene.png" alt="Clase presencial para adultos en Kissimmee">
         </div>
       </div>
     </div>
